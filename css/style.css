@@ -1,0 +1,916 @@
+.container {
+  padding: 0 20px;
+  margin: 0 auto; }
+  @media screen and (min-width: 1200px) {
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+      max-width: 1260px; } }
+
+.triip-row:after {
+  display: table;
+  content: "";
+  clear: both; }
+
+.triip-row .triip-col-2,
+.triip-row .triip-col-3,
+.triip-row .triip-col-4,
+.triip-row .triip-col-5,
+.triip-row .triip-col-6,
+.triip-row .triip-col-7,
+.triip-row .triip-col-8,
+.triip-row .triip-col-9,
+.triip-row .triip-col-12 {
+  padding: 0 40px;
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .triip-row .triip-col-2,
+    .triip-row .triip-col-3,
+    .triip-row .triip-col-4,
+    .triip-row .triip-col-5,
+    .triip-row .triip-col-6,
+    .triip-row .triip-col-7,
+    .triip-row .triip-col-8,
+    .triip-row .triip-col-9,
+    .triip-row .triip-col-12 {
+      float: left; } }
+
+@media screen and (min-width: 768px) {
+  .triip-row .triip-col-2 {
+    width: 16.6%; } }
+
+@media screen and (min-width: 768px) {
+  .triip-row .triip-col-3 {
+    width: 25%; } }
+
+@media screen and (min-width: 768px) {
+  .triip-row .triip-col-4 {
+    width: 33.3%; } }
+
+@media screen and (min-width: 768px) {
+  .triip-row .triip-col-6 {
+    width: 50%; } }
+
+@media screen and (min-width: 768px) {
+  .triip-row .triip-col-8 {
+    width: 66.6%; } }
+
+@media screen and (min-width: 768px) {
+  .triip-row .triip-col-12 {
+    width: 100%; } }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background: #fff;
+  color: #a8a8a8;
+  font-family: "Proxima", "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0; }
+
+a {
+  color: #5ec2c9;
+  text-decoration: none;
+  -webkit-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s; }
+  a:hover, a:focus, a:active {
+    color: #4bbbc3; }
+
+.frm-message {
+  font-size: 13px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Gobold Bold Regular';
+  font-weight: normal; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+form {
+  margin-bottom: 20px; }
+
+.form-inner {
+  position: relative;
+  padding-top: 20px; }
+
+.btn {
+  background-color: #d3d3d3;
+  border: 0;
+  color: #fff;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Proxima", "Roboto", sans-serif;
+  min-width: 180px;
+  padding: 10px 40px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s; }
+  .btn:hover, .btn:focus, .btn:active {
+    background-color: #bfbfbf;
+    color: #fff;
+    cursor: pointer; }
+  .btn.btn-rounded {
+    border-radius: 25px; }
+  .btn.btn-primary {
+    background-color: #5ec2c9;
+    color: #fff; }
+    .btn.btn-primary:hover, .btn.btn-primary:focus, .btn.btn-primary:active {
+      background-color: #4bbbc3; }
+  .btn.btn-lg {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 15px 60px;
+    letter-spacing: 0.29px; }
+  .btn.btn-lg.btn-rounded {
+    border-radius: 35px; }
+  .btn.btn-gradient {
+    background: -webkit-linear-gradient(to left, #38b0f4, #26c2c8);
+    background: -moz-linear-gradient(to left, #38b0f4, #26c2c8);
+    background: -webkit-gradient(linear, right top, left top, from(#38b0f4), to(#26c2c8));
+    background: -webkit-linear-gradient(right, #38b0f4, #26c2c8);
+    background: -o-linear-gradient(right, #38b0f4, #26c2c8);
+    background: linear-gradient(to left, #38b0f4, #26c2c8); }
+  .btn.btn-edit {
+    background: url(../images/ico-edit.png) no-repeat left center;
+    color: #828282;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    padding: 0 0 0 18px;
+    font-size: 11px;
+    font-weight: 500;
+    min-width: 1px; }
+    .btn.btn-edit:hover, .btn.btn-edit:focus, .btn.btn-edit:active {
+      color: #5ec2c9; }
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: 0;
+  border-bottom: 1px solid #dfdfdf;
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Proxima", "Roboto", sans-serif;
+  padding: 6.66667px 10px;
+  width: 100%; }
+
+.field-value {
+  color: #333; }
+
+.row-control:after {
+  display: table;
+  content: "";
+  clear: both; }
+
+.control-group {
+  float: left;
+  margin-bottom: 25px;
+  margin-right: 20px; }
+  .control-group.w1 {
+    width: 125px; }
+  .control-group.w2 {
+    width: 280px; }
+  .control-group label {
+    color: #828282;
+    display: block;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase; }
+  .control-group select {
+    background: url(../images/arrow-down.png) no-repeat right center;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 0;
+    border-bottom: 1px solid #dfdfdf;
+    color: #a8a8a8;
+    font-family: "Proxima", "Roboto", sans-serif;
+    font-size: 16px;
+    padding: 6px 5px;
+    position: relative;
+    outline: none;
+    width: 100%; }
+
+.section-heading {
+  margin-bottom: 40px;
+  text-align: center; }
+  .section-heading h2 {
+    color: #5f5f5f;
+    font-family: 'Gobold Bold Regular';
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase; }
+  .section-heading p {
+    color: #2e2e2e;
+    font-size: 28px;
+    margin: 0; }
+
+.triip-header {
+  padding: 20px 0;
+  position: relative;
+  z-index: 60; }
+  .triip-header .container {
+    height: 65px; }
+  .triip-header .header-l {
+    position: absolute;
+    left: 20px;
+    top: 80px;
+    right: 20px; }
+    @media screen and (min-width: 768px) {
+      .triip-header .header-l {
+        float: left;
+        position: relative;
+        left: auto;
+        top: auto;
+        right: auto; } }
+    .triip-header .header-l form {
+      margin: 15px 0 0; }
+    .triip-header .header-l input {
+      background: url(../images/search-ico.png) no-repeat 10px 8px;
+      border: 1px solid #fff;
+      border-radius: 25px;
+      color: #fff;
+      height: 32px;
+      font-weight: 400;
+      padding: 0 20px 0 40px; }
+  .triip-header .brand {
+    margin: 0;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 48px; }
+    @media screen and (min-width: 768px) {
+      .triip-header .brand {
+        left: 50%;
+        top: 20px;
+        margin-left: -28px;
+        width: 57px; } }
+    .triip-header .brand a {
+      display: block; }
+      .triip-header .brand a img {
+        width: 100%; }
+  .triip-header .header-r {
+    position: absolute;
+    right: 20px;
+    top: 20px; }
+    @media screen and (min-width: 768px) {
+      .triip-header .header-r {
+        position: relative;
+        right: auto;
+        top: auto;
+        float: right; } }
+    .triip-header .header-r .user-nav {
+      list-style: none;
+      margin: 20px 0 0;
+      padding: 0;
+      overflow: hidden; }
+      .triip-header .header-r .user-nav li {
+        display: block;
+        float: left;
+        line-height: 1;
+        padding: 0 10px; }
+        .triip-header .header-r .user-nav li:first-child {
+          border-right: 1px solid #fff; }
+        .triip-header .header-r .user-nav li a {
+          color: #fff;
+          font-size: 14px;
+          font-family: 'Gobold Bold Regular';
+          letter-spacing: 1px;
+          text-transform: uppercase; }
+
+.triip-hero {
+  background: url(../images/hero-bg.png) no-repeat center center;
+  background-size: cover;
+  margin-top: -105px;
+  position: relative;
+  z-index: 50; }
+  .triip-hero:before {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0)));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    content: "";
+    height: 300px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%; }
+  .triip-hero .container {
+    min-height: 450px;
+    padding-top: 180px; }
+    @media screen and (min-width: 768px) {
+      .triip-hero .container {
+        min-height: 550px;
+        padding-top: 180px; } }
+    @media screen and (min-width: 1200px) {
+      .triip-hero .container {
+        padding-top: 250px;
+        min-height: 700px; } }
+  .triip-hero #frm-search-wrap {
+    background-color: #fff;
+    margin-bottom: 40px;
+    padding: 40px;
+    position: relative;
+    text-align: center; }
+    @media screen and (min-width: 768px) {
+      .triip-hero #frm-search-wrap {
+        float: left;
+        margin-bottom: 0;
+        width: 50%; } }
+    @media screen and (min-width: 1200px) {
+      .triip-hero #frm-search-wrap {
+        width: 33.3%; } }
+    .triip-hero #frm-search-wrap #frm-search {
+      margin-bottom: 0; }
+    .triip-hero #frm-search-wrap h3 {
+      color: #5ec2c9;
+      margin: 0 0 20px;
+      text-align: center;
+      text-transform: uppercase; }
+    .triip-hero #frm-search-wrap #destination {
+      border: 1px solid #b2b2b2;
+      margin-bottom: 20px;
+      padding: 0 10px;
+      height: 40px;
+      line-height: 40px;
+      width: 100%; }
+    .triip-hero #frm-search-wrap .tour-schedule {
+      background: url(../images/calendar-ico.png) no-repeat 5px 7px;
+      border: 1px solid #b2b2b2;
+      padding-left: 34px;
+      position: relative; }
+      .triip-hero #frm-search-wrap .tour-schedule:after {
+        display: table;
+        clear: both;
+        content: ""; }
+      .triip-hero #frm-search-wrap .tour-schedule #checkinDate,
+      .triip-hero #frm-search-wrap .tour-schedule #checkoutDate {
+        border: 0;
+        color: #666;
+        font-size: 14px;
+        float: left;
+        height: 40px;
+        font-weight: 400;
+        line-height: 40px;
+        padding-left: 10px;
+        padding-right: 0;
+        width: 30%; }
+      .triip-hero #frm-search-wrap .tour-schedule .arrow {
+        background: url(../images/arrow-right.png) no-repeat right center;
+        display: block;
+        float: left;
+        height: 40px;
+        width: 10%; }
+      .triip-hero #frm-search-wrap .tour-schedule select {
+        background: url(../images/arrow-down.png) no-repeat right center;
+        border: 0;
+        border-left: 1px solid #b2b2b2;
+        -moz-appearance: none;
+        appearance: none;
+        -webkit-appearance: none;
+        height: 40px;
+        padding-left: 10px;
+        width: 30%; }
+    .triip-hero #frm-search-wrap .activities {
+      margin-bottom: 20px;
+      padding: 10px 0;
+      text-align: left; }
+      .triip-hero #frm-search-wrap .activities span {
+        color: #363636;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        font-size: 12px; }
+  .triip-hero .hero-ct {
+    color: #fff;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.1); }
+    @media screen and (min-width: 768px) {
+      .triip-hero .hero-ct {
+        float: right;
+        width: 50%; } }
+    @media screen and (min-width: 1200px) {
+      .triip-hero .hero-ct {
+        width: 50%; } }
+    .triip-hero .hero-ct h2 {
+      font-size: 36px;
+      line-height: 1.4;
+      margin: 0; }
+      @media screen and (min-width: 768px) {
+        .triip-hero .hero-ct h2 {
+          font-size: 36px;
+          margin-bottom: 20px;
+          line-height: 1.4; } }
+      @media screen and (min-width: 1200px) {
+        .triip-hero .hero-ct h2 {
+          font-size: 56px;
+          line-height: 1.2; } }
+    .triip-hero .hero-ct p {
+      font-size: 20px;
+      margin: 0; }
+      @media screen and (min-width: 768px) {
+        .triip-hero .hero-ct p {
+          font-size: 24px; } }
+      @media screen and (min-width: 1200px) {
+        .triip-hero .hero-ct p {
+          font-size: 28px; } }
+
+.triip-features .container {
+  padding: 40px 0; }
+
+.triip-features .feature {
+  overflow: hidden;
+  padding: 20px 0; }
+
+@media screen and (min-width: 768px) {
+  .triip-features .feature-img,
+  .triip-features .feature-ct {
+    float: left;
+    width: 50%; } }
+
+.triip-features .feature-img {
+  padding: 20px;
+  text-align: right; }
+  @media screen and (min-width: 768px) {
+    .triip-features .feature-img {
+      padding: 0 40px 0 0; } }
+  .triip-features .feature-img img {
+    margin-bottom: 20px;
+    width: 100%; }
+    @media screen and (min-width: 1200px) {
+      .triip-features .feature-img img {
+        margin-bottom: 0;
+        width: auto; } }
+  .triip-features .feature-img .img-wrap {
+    position: relative;
+    float: right; }
+    .triip-features .feature-img .img-wrap .badge {
+      background-color: #fff;
+      border: 2px solid #5ec2c9;
+      border-radius: 50%;
+      display: block;
+      height: 63px;
+      font-family: 'Gobold Bold Regular';
+      line-height: 1;
+      padding: 10px 0;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      text-align: center;
+      width: 63px; }
+      .triip-features .feature-img .img-wrap .badge strong {
+        color: #5ec2c9;
+        display: block;
+        font-size: 19px;
+        font-weight: normal;
+        margin-bottom: 5px; }
+
+.triip-features .feature-ct {
+  padding: 0 20px 0 100px;
+  position: relative; }
+  @media screen and (min-width: 768px) {
+    .triip-features .feature-ct {
+      padding: 0 0 0 100px;
+      -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+      transform: translateY(50%); } }
+
+.triip-features h3 {
+  font-size: 24px;
+  margin: 0;
+  text-transform: uppercase; }
+
+.triip-features p {
+  color: #2e2e2e;
+  font-size: 20px; }
+
+.triip-features .number {
+  background: -webkit-gradient(linear, right top, left top, from(#38b0f4), to(#26c2c8));
+  background: -webkit-linear-gradient(right, #38b0f4, #26c2c8);
+  background: -o-linear-gradient(right, #38b0f4, #26c2c8);
+  background: linear-gradient(to left, #38b0f4, #26c2c8);
+  border-radius: 50%;
+  color: #fff;
+  display: block;
+  height: 40px;
+  font-family: 'Gobold Bold Regular';
+  line-height: 40px;
+  position: absolute;
+  top: 0;
+  left: 40px;
+  text-align: center;
+  width: 40px; }
+
+.triip-features .content-l .feature-img {
+  text-align: left; }
+  @media screen and (min-width: 768px) {
+    .triip-features .content-l .feature-img {
+      float: right;
+      padding: 0 0 0 40px; } }
+  .triip-features .content-l .feature-img .img-wrap {
+    float: left; }
+    .triip-features .content-l .feature-img .img-wrap .badge {
+      right: auto;
+      left: 80px; }
+
+.triip-features .content-l .feature-ct {
+  float: left;
+  padding: 0 100px 0 0;
+  text-align: right; }
+
+.triip-features .content-l .number {
+  left: auto;
+  right: 40px; }
+
+.triip-hotels .container {
+  padding: 40px 0; }
+
+.triip-hotels .item .hotel-img {
+  background-color: #f0f0f0;
+  margin-bottom: 10px; }
+
+.triip-hotels .item .hotel-info {
+  position: relative; }
+
+.triip-hotels .item h3 {
+  font-weight: 600;
+  margin: 0;
+  font-family: "Proxima", "Roboto", sans-serif; }
+
+.triip-hotels .item p {
+  margin: 0; }
+
+.triip-hotels .item .hotel-price {
+  color: #5ec2c9;
+  font-weight: 600;
+  position: absolute;
+  right: 0;
+  bottom: 0; }
+
+.triip-hotels .item .hotel-rank {
+  position: absolute;
+  top: 10px;
+  right: 0; }
+
+.triip-hotels .owl-nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  opacity: 0;
+  margin-top: -40px;
+  -webkit-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+  width: 100%; }
+  .triip-hotels .owl-nav button {
+    display: block;
+    height: 40px;
+    float: left;
+    font-size: 24px;
+    width: 40px; }
+    .triip-hotels .owl-nav button span {
+      background: #fff;
+      -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      font-size: 24px;
+      display: block;
+      height: 40px;
+      line-height: 40px;
+      width: 40px; }
+  .triip-hotels .owl-nav .owl-prev {
+    margin-left: -20px; }
+  .triip-hotels .owl-nav .owl-next {
+    float: right;
+    margin-right: -20px; }
+
+.triip-hotels #hotel-list-1:hover .owl-nav,
+.triip-hotels #hotel-list-2:hover .owl-nav {
+  opacity: 1; }
+
+.triip-hotels #hotel-list-1,
+.triip-hotels #hotel-list-2 {
+  padding-left: 20px;
+  padding-right: 20px; }
+  .triip-hotels #hotel-list-1 .owl-prev,
+  .triip-hotels #hotel-list-2 .owl-prev {
+    margin-left: 0; }
+  .triip-hotels #hotel-list-1 .owl-next,
+  .triip-hotels #hotel-list-2 .owl-next {
+    margin-right: 0; }
+
+.triip-hotels .stars-3,
+.triip-hotels .stars-4,
+.triip-hotels .stars-5 {
+  background: url(../images/star.png) repeat-x left top;
+  display: block;
+  height: 15px; }
+
+.triip-hotels .stars-3 {
+  width: 45px; }
+
+.triip-hotels .stars-4 {
+  width: 60px; }
+
+.triip-hotels .stars-5 {
+  width: 75px; }
+
+.countries-tour .container {
+  padding: 40px 0 80px; }
+
+.countries-tour .action-wrap {
+  padding: 40px 0 0; }
+
+ul.countries-list {
+  list-style: none;
+  margin: -10px;
+  padding: 0 20px;
+  overflow: hidden; }
+  @media screen and (min-width: 1200px) {
+    ul.countries-list {
+      padding: 0; } }
+  ul.countries-list li {
+    float: left;
+    padding: 10px;
+    width: 100%; }
+    @media screen and (min-width: 768px) {
+      ul.countries-list li {
+        width: 50%; } }
+    @media screen and (min-width: 1200px) {
+      ul.countries-list li {
+        width: 25%; } }
+    ul.countries-list li a {
+      background: #f9f9f9;
+      display: block;
+      height: 300px;
+      position: relative;
+      text-align: center; }
+      ul.countries-list li a .mask {
+        background-color: rgba(0, 0, 0, 0.1);
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%; }
+      ul.countries-list li a img {
+        width: 100%; }
+    ul.countries-list li h3 {
+      color: #fff;
+      display: block;
+      margin: 0;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      text-transform: uppercase;
+      text-align: center;
+      width: 100%;
+      z-index: 30; }
+
+.triip-foot {
+  background: -webkit-gradient(linear, right top, left top, from(#38b0f4), to(#26c2c8));
+  background: -webkit-linear-gradient(right, #38b0f4, #26c2c8);
+  background: -o-linear-gradient(right, #38b0f4, #26c2c8);
+  background: linear-gradient(to left, #38b0f4, #26c2c8);
+  position: relative; }
+  .triip-foot .container {
+    padding: 120px 20px;
+    overflow: hidden; }
+    @media screen and (min-width: 1200px) {
+      .triip-foot .container {
+        padding: 120px 0; } }
+  .triip-foot:before, .triip-foot:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 20; }
+  .triip-foot:before {
+    background: url(../images/hand.png) no-repeat center top;
+    background-size: cover;
+    height: 350px;
+    z-index: 20; }
+  .triip-foot:after {
+    background: url(../images/wave.png) repeat-x left top;
+    height: 50px; }
+  .triip-foot .foot-l {
+    margin-bottom: 40px;
+    padding: 0 20px;
+    position: relative;
+    z-index: 30; }
+    @media screen and (min-width: 768px) {
+      .triip-foot .foot-l {
+        float: left;
+        margin-bottom: 0;
+        padding: 0;
+        width: 40%; } }
+    @media screen and (min-width: 1200px) {
+      .triip-foot .foot-l {
+        width: 40%; } }
+    .triip-foot .foot-l img {
+      width: 100%; }
+      @media screen and (min-width: 1200px) {
+        .triip-foot .foot-l img {
+          max-width: 400px; } }
+  .triip-foot .foot-r {
+    color: #fff;
+    padding: 0 20px;
+    position: relative;
+    z-index: 30; }
+    @media screen and (min-width: 768px) {
+      .triip-foot .foot-r {
+        float: right;
+        padding: 0 0 0 80px;
+        width: 60%; } }
+    .triip-foot .foot-r h2 {
+      font-size: 36px;
+      margin: 0; }
+    .triip-foot .foot-r p {
+      margin-bottom: 30px; }
+    .triip-foot .foot-r .btn {
+      background: -webkit-gradient(linear, right top, left top, from(#e2a328), to(#f48a38));
+      background: -webkit-linear-gradient(right, #e2a328, #f48a38);
+      background: -o-linear-gradient(right, #e2a328, #f48a38);
+      background: linear-gradient(to left, #e2a328, #f48a38);
+      border-radius: 25px;
+      display: inline-block;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 1px;
+      padding: 10px 0;
+      min-width: 280px;
+      text-align: center;
+      text-transform: uppercase; }
+
+.triip-partners {
+  z-index: 30; }
+  .triip-partners .strategic-partners {
+    text-align: center; }
+    .triip-partners .strategic-partners .partner {
+      color: #2e2e2e;
+      display: inline-block;
+      width: 350px; }
+      @media screen and (min-width: 768px) {
+        .triip-partners .strategic-partners .partner {
+          width: 350px; } }
+      .triip-partners .strategic-partners .partner h3 {
+        font-family: "Proxima", "Roboto", sans-serif;
+        font-size: 36px;
+        font-weight: 600;
+        margin: 40px 0 0; }
+      .triip-partners .strategic-partners .partner p {
+        font-size: 20px;
+        font-weight: 500;
+        margin: 0; }
+      .triip-partners .strategic-partners .partner img {
+        float: left; }
+  .triip-partners .other-partners {
+    padding-top: 40px; }
+    .triip-partners .other-partners:after {
+      display: table;
+      content: "";
+      clear: both; }
+    .triip-partners .other-partners .partner {
+      float: left;
+      position: relative;
+      overflow: hidden;
+      height: 80px;
+      padding: 20px; }
+      .triip-partners .other-partners .partner img {
+        max-height: 60px; }
+      .triip-partners .other-partners .partner .partner-desc {
+        background-color: rgba(255, 255, 255, 0.9);
+        border: 1px solid #eee;
+        border-radius: 5px;
+        -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        color: #2e2e2e;
+        padding: 20px;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        opacity: 0;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        width: 250px;
+        -webkit-transition: all 0.25s;
+        -o-transition: all 0.25s;
+        transition: all 0.25s;
+        z-index: 200; }
+        .triip-partners .other-partners .partner .partner-desc h3 {
+          font-family: "Proxima", "Roboto", sans-serif;
+          margin: 0;
+          font-weight: 600; }
+        .triip-partners .other-partners .partner .partner-desc p {
+          margin: 0; }
+      .triip-partners .other-partners .partner:hover {
+        overflow: visible; }
+        .triip-partners .other-partners .partner:hover .partner-desc {
+          opacity: 1; }
+
+.triip-press-list {
+  z-index: 20; }
+  .triip-press-list .container {
+    padding: 60px 0; }
+  .triip-press-list img {
+    max-height: 40px; }
+  .triip-press-list #press-list {
+    position: relative; }
+    .triip-press-list #press-list .owl-nav {
+      display: block; }
+      .triip-press-list #press-list .owl-nav .owl-prev,
+      .triip-press-list #press-list .owl-nav .owl-next {
+        position: absolute;
+        left: -22px;
+        top: 10px; }
+        .triip-press-list #press-list .owl-nav .owl-prev span,
+        .triip-press-list #press-list .owl-nav .owl-next span {
+          background-color: #ccc;
+          border-radius: 50%;
+          color: #fff;
+          display: inline-block;
+          height: 22px;
+          line-height: 22px;
+          font-size: 16px;
+          text-align: center;
+          width: 22px; }
+      .triip-press-list #press-list .owl-nav .owl-next {
+        left: auto;
+        right: -22px; }
+
+.triip-footer {
+  background: #fff; }
+  .triip-footer .container {
+    padding: 60px 0; }
+  .triip-footer .footer-brand {
+    margin: 0 auto;
+    text-align: center; }
+    @media screen and (min-width: 768px) {
+      .triip-footer .footer-brand {
+        width: 150px; } }
+  .triip-footer .footer-block h3 {
+    color: #4c4c4c;
+    font-family: "Proxima", "Roboto", sans-serif;
+    font-weight: 600;
+    margin: 0 0 20px;
+    padding-bottom: 10px;
+    position: relative; }
+    .triip-footer .footer-block h3:after {
+      background-color: #dedede;
+      content: "";
+      height: 2px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 38px; }
+  .triip-footer .nav {
+    list-style: none;
+    margin: 0 0 10px;
+    padding: 0; }
+    .triip-footer .nav li a {
+      color: #939393;
+      display: block;
+      padding: 5px 0; }
+      .triip-footer .nav li a:hover, .triip-footer .nav li a:focus, .triip-footer .nav li a:active {
+        color: #5ec2c9; }
+    .triip-footer .nav li:first-child a {
+      padding-top: 0; }
+  .triip-footer .store-link {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .triip-footer .store-link li {
+      margin-bottom: 10px; }
+  .triip-footer .social-list {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .triip-footer .social-list li {
+      display: inline-block;
+      padding: 0 5px; }
+      .triip-footer .social-list li a {
+        display: block;
+        height: 16px;
+        width: 16px; }
